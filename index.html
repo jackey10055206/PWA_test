@@ -20,72 +20,99 @@
     <meta name="mobile-web-app-capable" content="yes" />
     <meta name="mobile-web-app-status-bar-style" content="black" />
     <meta name="mobile-web-app-title" content="PWAConf" />
+
+
+    <style>
+    body{
+      background-image: url(https://i.pinimg.com/564x/57/74/96/5774969177e3b5e34b43b7ebe66bd9fb.jpg);
+    } 
+        
+        
+
+        #panel,#flip {
+          margin: 0px;
+          width: 500px;
+        padding: 10px;
+        text-align: center;
+        background-color: #FFFF00;
+        border: solid 3px #c3c3c3;
+        }
+
+        #panel{
+          height: 135px;
+      background: #9ACD32;
+        padding: 10px;
+        display: none;
+        }
+  </style>
+
+
+
   </head>
 
   <body>
     <header><h1>PWAConf</h1></header>
 
-    <nav>
-      <a href="#speakers">Speakers</a> <a href="#schedule">Schedule</a>
-      <a href="#code-of-conduct">Code of conduct</a>
-    </nav>
 
-    <div class="alert" role="alert" hidden>
-      Your browser does not support ServiceWorker. The app will not be available
-      offline.
-    </div>
 
-    <main>
-      <p>
-        Welcome to PWAConf, the premier made-up PWA conference in the world! The
-        conference is held <b>September 13-14</b> in sunny Santa Cruz, CA.
-      </p>
+     <script>
+  (function() {
+    var cx = '011504046942273563711:55sfu42ojhk';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+    })();
+  </script>
+ 
+   
+  <div style="text-align:center; font-size: 1cm; font-family: Brush Script MT,cursive; color : red;" >
+    <h1>This website is for my Lab04!</h1>
+  </div>
+<div></div>
+  <audio src="http://140.136.150.68/static/A_Sky_Full_Of_Stars.mp3" controls="controls" autoplay="autoplay" loop="infinite">
+  Your browser does not support the audio element.
+  </audio>
 
-      <p>
-        The conference is a single day, single track event focused on building
-        kick-ass user experiences on the web.
-      </p>
+  
+  <div style="margin-left: 38%; position: fixed;">
 
-      <p>
-        Learn how to build this app yourself by
-        <a href="https://vaadin.com/tutorials/learn-pwas">doing the tutorial</a
-        >.
-      </p>
+  <div id="flip" style="font-family: Brush Script MT,cursive; font-size:30px">
+  Touch me!
+  </div>
+  
+  <div id="panel" style="font-size:20px">
+    <p>上一個Lab是利用Hexo架出來的blog</p>
+    <p>但在Hexo無法實現JQuery</p>
+    <p>所以這次我只好重頭開始寫啦XD</p>
+  </div>
 
-      <h2 id="speakers">Speakers</h2>
-      <div class="speakers"><div class="loader" hidden>Loading...</div></div>
+  </div>
 
-      <h2 id="schedule">Schedule</h2>
-
-      <p>All the presentations will be held in the main auditorium.</p>
-      <div class="schedule"><div class="loader" hidden>Loading...</div></div>
-
-      <h2 id="code-of-conduct">Code of conduct</h2>
-      <p>
-        All attendees are required to follow the
-        <a href="http://confcodeofconduct.com/">code of conduct</a>. Be nice to
-        everyone or get kicked out.
-      </p>
-    </main>
-    <footer>
-      <p>
-        This is not a real conference app. This is a PWA tutorial you can find
-        on
-        <a href="https://vaadin.com/tutorials/learn-pwas"
-          >vaadin.com/tutorials/learn-pwas</a
-        >.
-      </p>
-      <p>
-        Created by
-        <a href="https://twitter.com/marcushellberg">@marcushellberg</a>, the
-        source code is available on
-        <a href="https://github.com/vaadin-learning-center/pwa-tutorial-basic"
-          >GitHub.</a
-        >
-        Speaker images and names are created with
-        <a href="https://randomuser.me/">randomuser.me</a>.
-      </p>
-    </footer>
     <script src="./app.js"></script>
   </body>
 </html>
+
+
+
+
+ 
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script> 
+  $(document).ready(function(){
+      $("#flip").hover(function(){
+        $("#panel").slideToggle("slow");
+      });
+  });
+  </script>
+
+
+
+
+
+
+
+    
